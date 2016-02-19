@@ -1,15 +1,17 @@
 var assert = require("assert");
+var LivingCriature = require("../src/living-criature");
+var Walker = require("../src/walker");
 
 var WalkingCriature = require("../src/walking-criature");
 
 describe("WalkingCriature", function () {
 
-    it.skip("must be a function", function () {
+    it("must be a function", function () {
 
         assert(typeof WalkingCriature === "function");
     });
 
-    it.skip("must construct objects with prototypes: WalkingCriature.prototype", function () {
+    it("must construct objects with prototypes: WalkingCriature.prototype", function () {
 
         var legs = 2;
 
@@ -21,7 +23,7 @@ describe("WalkingCriature", function () {
         assert(actual === expected);
     });
 
-    it.skip("must construct inherit from: LivingCriature", function () {
+    it("must construct inherit from: LivingCriature", function () {
 
         var legs = 2;
 
@@ -33,7 +35,7 @@ describe("WalkingCriature", function () {
         assert(actual === expected);
     });
 
-    it.skip("must construct inherit from: Walker", function () {
+    it("must construct inherit from: Walker", function () {
 
         var legs = 2;
 
@@ -49,7 +51,7 @@ describe("WalkingCriature", function () {
 
         describe(".walk()", function () {
 
-            it.skip("must increment throw an error if it has died", function () {
+            it("must increment throw an error if it has died", function () {
 
                 var legs = 2;
 
@@ -61,7 +63,7 @@ describe("WalkingCriature", function () {
                 });
             });
 
-            it.skip("must increment the amount of steps by 1 if it has not died", function () {
+            it("must increment the amount of steps by 1 if it has not died", function () {
 
                 var initialOxygen = 2;
                 var legs = 2;
@@ -76,7 +78,7 @@ describe("WalkingCriature", function () {
                 assert(actual === expected);
             });
 
-            it.skip("must decrement the decrement the amount of oxygen by 1 if it has not died", function () {
+            it("must decrement the decrement the amount of oxygen by 1 if it has not died", function () {
 
                 var initialOxygen = 2;
                 var legs = 2;

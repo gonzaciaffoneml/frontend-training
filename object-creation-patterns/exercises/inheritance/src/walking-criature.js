@@ -7,7 +7,11 @@
 // - walk
 //   - must throw an exception if it has died
 //   - must consume oxygen and walk
-function WalkingCriature() {
+function WalkingCriature(legs, oxygen) {
+    this.oxygen = oxygen;
+    this.legs = legs;
 }
+
+
 
 module.exports = WalkingCriature;
