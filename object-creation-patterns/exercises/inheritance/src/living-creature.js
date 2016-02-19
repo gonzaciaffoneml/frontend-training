@@ -5,6 +5,7 @@
 // - breath            : It increments the amount of remaining oxygen
 // - consumeOxygen     : It decrements the amount of remaining oxygen
 // - hasDied           : It returns true if the amount of oxygen is zero and false otherwise
+<<<<<<< HEAD:object-creation-patterns/exercises/inheritance/src/living-criature.js
 function LivingCriature(oxygen) {
     if (isNaN(oxygen)) {
         throw "Error: isNaN";
@@ -42,3 +43,9 @@ LivingCriature.prototype.hasDied = function () {
 LivingCriature.prototype.constructor = LivingCriature;
 
 module.exports = LivingCriature;
+=======
+function LivingCreature() {
+}
+
+module.exports = LivingCreature;
+>>>>>>> upstream/master:object-creation-patterns/exercises/inheritance/src/living-creature.js
